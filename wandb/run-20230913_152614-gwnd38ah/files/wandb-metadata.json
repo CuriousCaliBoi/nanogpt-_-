@@ -1,0 +1,59 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.13",
+    "heartbeatAt": "2023-09-13T22:26:16.581073",
+    "startedAt": "2023-09-13T22:26:14.516744",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "config/train_shakespeare_char.py",
+        "--device=mps",
+        "--compile=False",
+        "--eval_iters=20",
+        "--log_interval=1",
+        "--block_size=64",
+        "--batch_size=12",
+        "--n_layer=4",
+        "--n_head=4",
+        "--n_embd=128",
+        "--max_iters=2000",
+        "--lr_decay_iters=2000",
+        "--dropout=0.0"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/CuriousCaliBoi/nanogpt-_-.git",
+        "commit": "ce47a01581a8227d3f21429706115ef09e0b8912"
+    },
+    "email": "rs6121@nyu.edu",
+    "root": "/Users/zuko/Prince_Zuko/nanoGPT/nanoGPT",
+    "host": "Rohans-MacBook-Air.local",
+    "username": "zuko",
+    "executable": "/Users/zuko/Prince_Zuko/nanoGPT/nanoGPT/nano_gpt/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 926.3517189025879,
+            "used": 12.054637908935547
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

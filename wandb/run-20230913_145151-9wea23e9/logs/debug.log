@@ -1,0 +1,26 @@
+2023-09-13 14:51:51,266 INFO    MainThread:56319 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-09-13 14:51:51,267 INFO    MainThread:56319 [wandb_setup.py:_flush():76] Configure stats pid to 56319
+2023-09-13 14:51:51,267 INFO    MainThread:56319 [wandb_setup.py:_flush():76] Loading settings from /Users/zuko/.config/wandb/settings
+2023-09-13 14:51:51,267 INFO    MainThread:56319 [wandb_setup.py:_flush():76] Loading settings from /Users/zuko/Prince_Zuko/nanoGPT/nanoGPT/wandb/settings
+2023-09-13 14:51:51,267 INFO    MainThread:56319 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-13 14:51:51,267 INFO    MainThread:56319 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-13 14:51:51,267 INFO    MainThread:56319 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': 'train.py'}
+2023-09-13 14:51:51,267 INFO    MainThread:56319 [wandb_init.py:_log_setup():524] Logging user logs to /Users/zuko/Prince_Zuko/nanoGPT/nanoGPT/wandb/run-20230913_145151-9wea23e9/logs/debug.log
+2023-09-13 14:51:51,267 INFO    MainThread:56319 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/zuko/Prince_Zuko/nanoGPT/nanoGPT/wandb/run-20230913_145151-9wea23e9/logs/debug-internal.log
+2023-09-13 14:51:51,267 INFO    MainThread:56319 [wandb_init.py:init():564] calling init triggers
+2023-09-13 14:51:51,268 INFO    MainThread:56319 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'out_dir': 'out-shakespeare-char', 'eval_interval': 250, 'log_interval': 1, 'eval_iters': 20, 'eval_only': False, 'always_save_checkpoint': False, 'init_from': 'scratch', 'wandb_log': False, 'wandb_project': 'shakespeare-char', 'wandb_run_name': 'mini-gpt', 'dataset': 'shakespeare_char', 'gradient_accumulation_steps': 1, 'batch_size': 12, 'block_size': 64, 'n_layer': 4, 'n_head': 4, 'n_embd': 128, 'dropout': 0.0, 'bias': False, 'learning_rate': 0.001, 'max_iters': 2000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.99, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 100, 'lr_decay_iters': 2000, 'min_lr': 0.0001, 'backend': 'nccl', 'device': 'mps', 'dtype': 'float16', 'compile': False}
+2023-09-13 14:51:51,268 INFO    MainThread:56319 [wandb_init.py:init():614] starting backend
+2023-09-13 14:51:51,268 INFO    MainThread:56319 [wandb_init.py:init():618] setting up manager
+2023-09-13 14:51:51,270 INFO    MainThread:56319 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-09-13 14:51:51,273 INFO    MainThread:56319 [wandb_init.py:init():624] backend started and connected
+2023-09-13 14:51:51,279 INFO    MainThread:56319 [wandb_init.py:init():715] updated telemetry
+2023-09-13 14:51:51,311 INFO    MainThread:56319 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2023-09-13 14:51:51,732 INFO    MainThread:56319 [wandb_run.py:_on_init():2220] communicating current version
+2023-09-13 14:51:51,899 INFO    MainThread:56319 [wandb_run.py:_on_init():2229] got version response 
+2023-09-13 14:51:51,899 INFO    MainThread:56319 [wandb_init.py:init():799] starting run threads in backend
+2023-09-13 14:51:51,970 INFO    MainThread:56319 [wandb_run.py:_console_start():2199] atexit reg
+2023-09-13 14:51:51,971 INFO    MainThread:56319 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-09-13 14:51:51,971 INFO    MainThread:56319 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-09-13 14:51:51,971 INFO    MainThread:56319 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-09-13 14:51:51,971 INFO    MainThread:56319 [wandb_init.py:init():840] run started, returning control to user process

@@ -1,0 +1,197 @@
+wandb has been initialized with project nameshakespeare-char and name mini-gpt
+Our config file is {'out_dir': 'out-shakespeare-char', 'eval_interval': 250, 'log_interval': 1, 'eval_iters': 20, 'eval_only': False, 'always_save_checkpoint': False, 'init_from': 'scratch', 'wandb_log': False, 'wandb_project': 'shakespeare-char', 'wandb_run_name': 'mini-gpt', 'dataset': 'shakespeare_char', 'gradient_accumulation_steps': 1, 'batch_size': 12, 'block_size': 64, 'n_layer': 4, 'n_head': 4, 'n_embd': 128, 'dropout': 0.0, 'bias': False, 'learning_rate': 0.001, 'max_iters': 2000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.99, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 100, 'lr_decay_iters': 2000, 'min_lr': 0.0001, 'backend': 'nccl', 'device': 'mps', 'dtype': 'float16', 'compile': False}
+tokens per iteration will be: 768
+found vocab_size = 65 (inside data/shakespeare_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 0.80M
+num decayed parameter tensors: 18, with 802,944 parameters
+num non-decayed parameter tensors: 9, with 1,152 parameters
+using fused AdamW: False
+step 0: train loss 4.1676, val loss 4.1649
+/Users/zuko/Prince_Zuko/nanoGPT/nanoGPT/nano_gpt/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:120: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+iter 0: loss 4.1828, time 1862.35ms, mfu -100.00%
+iter 1: loss 4.1512, time 100.78ms, mfu -100.00%
+iter 2: loss 4.1654, time 60.26ms, mfu -100.00%
+iter 3: loss 4.1398, time 60.08ms, mfu -100.00%
+iter 4: loss 4.0927, time 59.76ms, mfu -100.00%
+iter 5: loss 4.0367, time 59.72ms, mfu 0.02%
+iter 6: loss 3.9746, time 60.52ms, mfu 0.02%
+iter 7: loss 3.9021, time 60.71ms, mfu 0.02%
+iter 8: loss 3.8626, time 60.76ms, mfu 0.02%
+iter 9: loss 3.7704, time 59.43ms, mfu 0.02%
+iter 10: loss 3.7665, time 59.44ms, mfu 0.02%
+iter 11: loss 3.7467, time 60.96ms, mfu 0.02%
+iter 12: loss 3.7263, time 59.26ms, mfu 0.02%
+iter 13: loss 3.6980, time 59.72ms, mfu 0.02%
+iter 14: loss 3.6628, time 59.82ms, mfu 0.02%
+iter 15: loss 3.6419, time 60.38ms, mfu 0.02%
+iter 16: loss 3.6213, time 59.36ms, mfu 0.02%
+iter 17: loss 3.6162, time 61.16ms, mfu 0.02%
+iter 18: loss 3.6407, time 59.58ms, mfu 0.02%
+iter 19: loss 3.6619, time 60.20ms, mfu 0.02%
+iter 20: loss 3.5484, time 60.35ms, mfu 0.02%
+iter 21: loss 3.5656, time 59.62ms, mfu 0.02%
+iter 22: loss 3.5263, time 59.51ms, mfu 0.02%
+iter 23: loss 3.5019, time 59.42ms, mfu 0.02%
+iter 24: loss 3.5342, time 59.41ms, mfu 0.02%
+iter 25: loss 3.3670, time 61.30ms, mfu 0.02%
+iter 26: loss 3.3540, time 59.86ms, mfu 0.02%
+iter 27: loss 3.3793, time 59.42ms, mfu 0.02%
+iter 28: loss 3.2957, time 59.33ms, mfu 0.02%
+iter 29: loss 3.3217, time 59.72ms, mfu 0.02%
+iter 30: loss 3.3526, time 59.45ms, mfu 0.02%
+iter 31: loss 3.2465, time 59.09ms, mfu 0.02%
+iter 32: loss 3.2195, time 59.76ms, mfu 0.02%
+iter 33: loss 3.2252, time 59.05ms, mfu 0.02%
+iter 34: loss 3.1642, time 59.61ms, mfu 0.02%
+iter 35: loss 3.2609, time 58.97ms, mfu 0.02%
+iter 36: loss 3.1577, time 59.42ms, mfu 0.02%
+iter 37: loss 3.1705, time 59.44ms, mfu 0.02%
+iter 38: loss 3.0329, time 59.60ms, mfu 0.02%
+iter 39: loss 3.0840, time 59.74ms, mfu 0.02%
+iter 40: loss 3.1115, time 60.08ms, mfu 0.02%
+iter 41: loss 3.0512, time 59.93ms, mfu 0.02%
+iter 42: loss 3.0016, time 59.59ms, mfu 0.02%
+iter 43: loss 2.9784, time 59.14ms, mfu 0.02%
+iter 44: loss 3.0152, time 59.80ms, mfu 0.02%
+iter 45: loss 2.9944, time 58.98ms, mfu 0.02%
+iter 46: loss 2.9305, time 59.44ms, mfu 0.02%
+iter 47: loss 3.0577, time 58.72ms, mfu 0.02%
+iter 48: loss 2.9505, time 59.30ms, mfu 0.02%
+iter 49: loss 2.9481, time 59.55ms, mfu 0.02%
+iter 50: loss 2.9463, time 59.13ms, mfu 0.02%
+iter 51: loss 2.9205, time 59.93ms, mfu 0.02%
+iter 52: loss 2.9232, time 59.35ms, mfu 0.02%
+iter 53: loss 2.9064, time 59.84ms, mfu 0.02%
+iter 54: loss 2.8243, time 58.88ms, mfu 0.02%
+iter 55: loss 2.8249, time 59.60ms, mfu 0.02%
+iter 56: loss 2.7912, time 59.62ms, mfu 0.02%
+iter 57: loss 2.8584, time 60.30ms, mfu 0.02%
+iter 58: loss 2.8226, time 59.81ms, mfu 0.02%
+iter 59: loss 2.8468, time 60.17ms, mfu 0.02%
+iter 60: loss 2.7946, time 59.88ms, mfu 0.02%
+iter 61: loss 2.8312, time 58.91ms, mfu 0.02%
+iter 62: loss 2.7602, time 59.26ms, mfu 0.02%
+iter 63: loss 2.8024, time 58.90ms, mfu 0.02%
+iter 64: loss 2.8022, time 58.85ms, mfu 0.02%
+iter 65: loss 2.7321, time 59.83ms, mfu 0.02%
+iter 66: loss 2.7658, time 59.57ms, mfu 0.02%
+iter 67: loss 2.7488, time 60.36ms, mfu 0.02%
+iter 68: loss 2.7737, time 59.25ms, mfu 0.02%
+iter 69: loss 2.7789, time 59.12ms, mfu 0.02%
+iter 70: loss 2.7076, time 60.14ms, mfu 0.02%
+iter 71: loss 2.7727, time 60.13ms, mfu 0.02%
+iter 72: loss 2.6684, time 60.27ms, mfu 0.02%
+iter 73: loss 2.7057, time 59.48ms, mfu 0.02%
+iter 74: loss 2.6562, time 60.13ms, mfu 0.02%
+iter 75: loss 2.7676, time 59.06ms, mfu 0.02%
+iter 76: loss 2.6640, time 59.96ms, mfu 0.02%
+iter 77: loss 2.7622, time 59.97ms, mfu 0.02%
+iter 78: loss 2.6759, time 58.92ms, mfu 0.02%
+iter 79: loss 2.6806, time 59.15ms, mfu 0.02%
+iter 80: loss 2.6173, time 58.56ms, mfu 0.02%
+iter 81: loss 2.6891, time 59.15ms, mfu 0.02%
+iter 82: loss 2.6911, time 59.06ms, mfu 0.02%
+iter 83: loss 2.6275, time 59.70ms, mfu 0.02%
+iter 84: loss 2.7292, time 59.47ms, mfu 0.02%
+iter 85: loss 2.6829, time 59.88ms, mfu 0.02%
+iter 86: loss 2.5994, time 59.54ms, mfu 0.02%
+iter 87: loss 2.6463, time 59.43ms, mfu 0.02%
+iter 88: loss 2.6111, time 59.99ms, mfu 0.02%
+iter 89: loss 2.7312, time 59.07ms, mfu 0.02%
+iter 90: loss 2.6180, time 61.00ms, mfu 0.02%
+iter 91: loss 2.6678, time 60.40ms, mfu 0.02%
+iter 92: loss 2.6055, time 59.93ms, mfu 0.02%
+iter 93: loss 2.5397, time 59.35ms, mfu 0.02%
+iter 94: loss 2.7052, time 59.95ms, mfu 0.02%
+iter 95: loss 2.6428, time 59.42ms, mfu 0.02%
+iter 96: loss 2.6829, time 59.23ms, mfu 0.02%
+iter 97: loss 2.5873, time 59.09ms, mfu 0.02%
+iter 98: loss 2.5377, time 59.09ms, mfu 0.02%
+iter 99: loss 2.6871, time 59.46ms, mfu 0.02%
+iter 100: loss 2.6648, time 59.51ms, mfu 0.02%
+iter 101: loss 2.6579, time 59.52ms, mfu 0.02%
+iter 102: loss 2.5922, time 59.59ms, mfu 0.02%
+iter 103: loss 2.6345, time 60.08ms, mfu 0.02%
+iter 104: loss 2.5047, time 59.04ms, mfu 0.02%
+iter 105: loss 2.5732, time 58.99ms, mfu 0.02%
+iter 106: loss 2.5281, time 59.04ms, mfu 0.02%
+iter 107: loss 2.5841, time 59.38ms, mfu 0.02%
+iter 108: loss 2.5639, time 59.55ms, mfu 0.02%
+iter 109: loss 2.5932, time 59.03ms, mfu 0.02%
+iter 110: loss 2.5891, time 58.63ms, mfu 0.02%
+iter 111: loss 2.5346, time 58.81ms, mfu 0.02%
+iter 112: loss 2.5361, time 58.62ms, mfu 0.02%
+iter 113: loss 2.5470, time 58.58ms, mfu 0.02%
+iter 114: loss 2.6048, time 58.52ms, mfu 0.02%
+iter 115: loss 2.5476, time 58.67ms, mfu 0.02%
+iter 116: loss 2.5759, time 59.79ms, mfu 0.02%
+iter 117: loss 2.5398, time 58.77ms, mfu 0.02%
+iter 118: loss 2.5895, time 59.91ms, mfu 0.02%
+iter 119: loss 2.6238, time 58.67ms, mfu 0.02%
+iter 120: loss 2.6206, time 59.56ms, mfu 0.02%
+iter 121: loss 2.7216, time 58.72ms, mfu 0.02%
+iter 122: loss 2.6038, time 59.51ms, mfu 0.02%
+iter 123: loss 2.5846, time 59.42ms, mfu 0.02%
+iter 124: loss 2.6185, time 59.43ms, mfu 0.02%
+iter 125: loss 2.5922, time 58.89ms, mfu 0.02%
+iter 126: loss 2.6086, time 59.51ms, mfu 0.02%
+iter 127: loss 2.6753, time 59.96ms, mfu 0.02%
+iter 128: loss 2.5911, time 60.19ms, mfu 0.02%
+iter 129: loss 2.5650, time 59.59ms, mfu 0.02%
+iter 130: loss 2.5459, time 59.76ms, mfu 0.02%
+iter 131: loss 2.7001, time 58.83ms, mfu 0.02%
+iter 132: loss 2.5248, time 59.94ms, mfu 0.02%
+iter 133: loss 2.5641, time 59.56ms, mfu 0.02%
+iter 134: loss 2.4341, time 60.35ms, mfu 0.02%
+iter 135: loss 2.5768, time 62.09ms, mfu 0.02%
+iter 136: loss 2.6012, time 63.38ms, mfu 0.02%
+iter 137: loss 2.5043, time 60.54ms, mfu 0.02%
+iter 138: loss 2.5159, time 59.85ms, mfu 0.02%
+iter 139: loss 2.5872, time 59.64ms, mfu 0.02%
+iter 140: loss 2.4944, time 59.37ms, mfu 0.02%
+iter 141: loss 2.5229, time 58.88ms, mfu 0.02%
+iter 142: loss 2.5430, time 59.83ms, mfu 0.02%
+iter 143: loss 2.5687, time 59.01ms, mfu 0.02%
+iter 144: loss 2.5464, time 58.93ms, mfu 0.02%
+iter 145: loss 2.5449, time 59.41ms, mfu 0.02%
+iter 146: loss 2.5041, time 59.31ms, mfu 0.02%
+iter 147: loss 2.5602, time 59.06ms, mfu 0.02%
+iter 148: loss 2.4698, time 59.44ms, mfu 0.02%
+iter 149: loss 2.5515, time 59.12ms, mfu 0.02%
+iter 150: loss 2.5360, time 59.03ms, mfu 0.02%
+iter 151: loss 2.5290, time 59.41ms, mfu 0.02%
+iter 152: loss 2.5725, time 59.50ms, mfu 0.02%
+iter 153: loss 2.4933, time 60.83ms, mfu 0.02%
+iter 154: loss 2.4579, time 59.66ms, mfu 0.02%
+iter 155: loss 2.4768, time 59.60ms, mfu 0.02%
+iter 156: loss 2.5000, time 58.87ms, mfu 0.02%
+iter 157: loss 2.5618, time 58.39ms, mfu 0.02%
+iter 158: loss 2.5761, time 60.13ms, mfu 0.02%
+iter 159: loss 2.5046, time 59.44ms, mfu 0.02%
+iter 160: loss 2.5293, time 60.24ms, mfu 0.02%
+iter 161: loss 2.4995, time 58.97ms, mfu 0.02%
+iter 162: loss 2.4577, time 58.50ms, mfu 0.02%
+iter 163: loss 2.4998, time 59.11ms, mfu 0.02%
+iter 164: loss 2.5111, time 58.30ms, mfu 0.02%
+iter 165: loss 2.6268, time 58.98ms, mfu 0.02%
+iter 166: loss 2.5130, time 58.89ms, mfu 0.02%
+iter 167: loss 2.4668, time 59.25ms, mfu 0.02%
+iter 168: loss 2.5482, time 59.80ms, mfu 0.02%
+iter 169: loss 2.4939, time 60.00ms, mfu 0.02%
+iter 170: loss 2.4728, time 58.92ms, mfu 0.02%
+iter 171: loss 2.3852, time 58.77ms, mfu 0.02%
+iter 172: loss 2.5197, time 59.15ms, mfu 0.02%
+iter 173: loss 2.5215, time 59.20ms, mfu 0.02%
+iter 174: loss 2.4674, time 58.43ms, mfu 0.02%
+Traceback (most recent call last):
+  File "train.py", line 315, in <module>
+    torch.nn.utils.clip_grad_norm_(model.parameters(), grad_clip)
+  File "/Users/zuko/Prince_Zuko/nanoGPT/nanoGPT/nano_gpt/lib/python3.8/site-packages/torch/nn/utils/clip_grad.py", line 59, in clip_grad_norm_
+    norms.extend([torch.norm(g, norm_type) for g in grads])
+  File "/Users/zuko/Prince_Zuko/nanoGPT/nanoGPT/nano_gpt/lib/python3.8/site-packages/torch/nn/utils/clip_grad.py", line 59, in <listcomp>
+    norms.extend([torch.norm(g, norm_type) for g in grads])
+  File "/Users/zuko/Prince_Zuko/nanoGPT/nanoGPT/nano_gpt/lib/python3.8/site-packages/torch/functional.py", line 1530, in norm
+    return _VF.norm(input, p, dim=_dim, keepdim=keepdim)  # type: ignore[attr-defined]
+KeyboardInterrupt
